@@ -27,7 +27,7 @@
             android:id="@+id/btnSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/accent"
+            android:background="@android:color/white"
             android:onClick="@{() -> eventHandler.onClickEvent()}"
             android:text="@string/frg_external_button_open" />
 

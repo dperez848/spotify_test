@@ -17,16 +17,16 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.daniela.app.R;
-import com.daniela.app.base.fragment.BaseFragment;
 import com.daniela.app.base.events.EventProgressDialog;
 import com.daniela.app.base.events.EventSnackbarMessage;
+import com.daniela.app.base.fragment.BaseFragment;
 import com.daniela.app.databinding.FragmentMainBinding;
-import com.daniela.app.ui.main.adapter.AdapterAlbums;
 import com.daniela.app.ui.EventHandlerNavigation;
 import com.daniela.app.ui.detail.FrgAlbumDetail;
+import com.daniela.app.ui.main.adapter.AdapterAlbums;
 import com.daniela.app.ui.main.viewmodel.ViewModelMain;
-import com.daniela.data.entities.Artist;
 import com.daniela.data.entities.Album;
+import com.daniela.data.entities.Artist;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -138,7 +138,6 @@ public class FrgMain extends BaseFragment implements EventHandlerNavigation, Ada
         binding.name.setText("");
         binding.artistCard.setVisibility(View.GONE);
         binding.recyclerView.setVisibility(View.GONE);
-        binding.defaultCommand.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -200,7 +199,6 @@ public class FrgMain extends BaseFragment implements EventHandlerNavigation, Ada
         binding.followers.setText(String.format(getString(R.string.followers_value), artist.getTotalFollowers()));
         binding.artistCard.setVisibility(View.VISIBLE);
         binding.recyclerView.setVisibility(View.VISIBLE);
-        binding.defaultCommand.setVisibility(View.INVISIBLE);
         setArtistImage(artist.getImageUrl());
     }
 
