@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SpotifyTest</string>
+    <string name="main_title">Spotify Test</string>
+    <string name="albums_title">Album</string>
+    <string name="frg_main_message_finding">Buscando artista</string>
+    <string name="frg_external_button_open">Open in Spotify</string>
+    <string name="frg_main_button_search">Search</string>
+    <string name="frg_main_popularity_title">Popularity</string>
+    <string name="frg_main_name_title">Name</string>
+    <string name="frg_main_followers_title">Followers</string>
+    <string name="value_string" translatable="false">%1$s</string>
+    <string name="value_int" translatable="false">%1$d</string>
+    <string name="frg_main_error_artist">Something went wrong, try again</string>
+</resources>

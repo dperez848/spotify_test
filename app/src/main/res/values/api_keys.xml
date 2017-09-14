@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="token">Bearer BQD9wjEECMn021lHa4LAy0UtUfZwAmYWAblxHrxgXBEFsSl6Eu6L89_aABcupNuuXfrAEIe6G94vSXqMzOhBhzt8-pgSrdUMYhtZus08lfghzCsa9mG7zl3eG2mdxVooKheV7GgA9b6EJu6d0wf58q9UqjmJz9V9NmkkE38R9iI</string>
+    <string name="header_auth">Authorization</string>
+</resources>
