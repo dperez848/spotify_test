@@ -2,10 +2,8 @@ package com.daniela.data.repositories.album;
 
 import android.support.annotation.NonNull;
 
-import com.daniela.data.managers.remote.Artist;
+import com.daniela.data.entities.Album;
 import com.daniela.data.repositories.album.source.RestAlbumSource;
-import com.daniela.data.repositories.artist.RepositoryArtistDataSource;
-import com.daniela.data.repositories.artist.source.RestArtistSource;
 
 import java.util.List;
 

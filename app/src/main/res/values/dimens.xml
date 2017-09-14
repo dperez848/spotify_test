@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Default -->
+
+    <!--Text-->
+    <dimen name="default_small_size_text">12dp</dimen>
+    <dimen name="default_medium_size_text_options">16dp</dimen>
+    <dimen name="default_medium_size_text">18dp</dimen>
+    <dimen name="default_large_size_text_option">20dp</dimen>
+    <dimen name="default_large_size_text">22dp</dimen>
+
+    <!--Default margins-->
     <dimen name="default_extra_small_size">2dp</dimen>
     <dimen name="default_small_size">4dp</dimen>
     <dimen name="default_medium_size">8dp</dimen>
     <dimen name="default_large_size">16dp</dimen>
     <dimen name="default_extra_large_size">32dp</dimen>
+    <dimen name="default_xx_large_size">64dp</dimen>
+    <dimen name="image_size">64dp</dimen>
+
 </resources>

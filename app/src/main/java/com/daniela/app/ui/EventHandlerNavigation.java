@@ -7,5 +7,4 @@ package com.daniela.app.ui;
 public interface EventHandlerNavigation {
 
     void onClickEvent();
-
 }

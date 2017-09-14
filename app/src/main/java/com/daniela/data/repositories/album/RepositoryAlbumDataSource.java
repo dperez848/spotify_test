@@ -1,6 +1,8 @@
 package com.daniela.data.repositories.album;
 
 
+import com.daniela.data.entities.Album;
+
 import java.util.List;
 
 import io.reactivex.Single;

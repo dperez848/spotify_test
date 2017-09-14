@@ -15,25 +15,66 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/btnSearch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="@{() -> eventHandler.onClickEvent()}"
-            android:text="@string/frg_main_button_search" />
-
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/default_extra_small_size"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="@dimen/cardview_default_radius"
+            card_view:cardElevation="@dimen/default_small_size"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="@dimen/default_medium_size">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_action_search"
+                    android:drawablePadding="@dimen/default_small_size_text"
+                    android:drawableStart="@drawable/ic_action_search"
+                    android:hint="@string/frg_main_hint_artist"
+                    android:imeOptions="actionSearch"
+                    android:padding="@dimen/default_small_size"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/default_medium_size_text" />
+
+                <ImageView
+                    android:id="@+id/search_clear"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:onClick="@{() -> eventHandler.onClickEvent()}"
+                    android:padding="16dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_action_navigation_close"
+                    android:visibility="invisible"
+                    tools:visibility="visible" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/artistCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_extra_small_size"
             android:elevation="@dimen/default_small_size"
-            card_view:cardCornerRadius="@dimen/default_small_size"
-            card_view:cardUseCompatPadding="false">
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            card_view:cardUseCompatPadding="false"
+            tools:visibility="visible">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,67 +85,73 @@
 
                 <ImageView
                     android:id="@+id/artistImage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/default_small_size" />
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_marginRight="@dimen/default_medium_size" />
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:text="@string/frg_main_name_title" />
+                        android:text="@string/frg_main_name_title"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/artistName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="-4dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
                         tools:text="Maria" />
 
                 </LinearLayout>
+
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/default_large_size"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:text="@string/frg_main_followers_title" />
+                        android:text="@string/frg_main_followers_title"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/followers"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="-4dp"
+                        android:textColor="@android:color/black"
                         tools:text="1" />
 
                 </LinearLayout>
+
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/default_medium_size"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:text="@string/frg_main_popularity_title" />
+                        android:text="@string/frg_main_popularity_title"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/popularity"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="-4dp"
+                        android:textColor="@android:color/black"
                         tools:text="1" />
 
                 </LinearLayout>
@@ -113,16 +160,16 @@
 
         </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/list_item" />
+
         <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/swipeRefresh"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:listitem="@layout/list_item" />
 
         </android.support.v4.widget.SwipeRefreshLayout>
 

@@ -11,4 +11,9 @@
     <string name="value_string" translatable="false">%1$s</string>
     <string name="value_int" translatable="false">%1$d</string>
     <string name="frg_main_error_artist">Something went wrong, try again</string>
+    <string name="frg_main_error_title">Oops</string>
+    <string name="frg_main_loading_view">Ingrese el nombre de su artista favorito</string>
+    <string name="frg_main_empty_view">No se ha encontrado ningun artista</string>
+    <string name="frg_main_hint_artist">i.e Madonna</string>
+    <string name="list_item_countries_available">Available in: %1$s</string>
 </resources>

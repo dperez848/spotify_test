@@ -3,7 +3,7 @@ package com.daniela.data.repositories.artist;
 import android.support.annotation.NonNull;
 
 
-import com.daniela.data.managers.remote.Artist;
+import com.daniela.data.entities.Artist;
 import com.daniela.data.repositories.artist.source.RestArtistSource;
 
 import io.reactivex.Single;

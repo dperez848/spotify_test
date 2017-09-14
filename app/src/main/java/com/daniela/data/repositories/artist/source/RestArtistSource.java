@@ -1,11 +1,10 @@
 package com.daniela.data.repositories.artist.source;
 
 
-import com.daniela.data.managers.remote.Artist;
-import com.daniela.data.managers.remote.ResponseArtists;
-import com.daniela.data.managers.remote.ResponseArtistsItems;
-import com.daniela.data.managers.remote.RestArtist;
-import com.daniela.data.managers.remote.RestClient;
+import com.daniela.data.entities.Artist;
+import com.daniela.data.managers.remote.response.artist.ResponseArtists;
+import com.daniela.data.managers.remote.response.artist.RestArtist;
+import com.daniela.data.managers.remote.restclient.RestClient;
 import com.daniela.data.managers.remote.RestManagerPrivateService;
 import com.daniela.data.repositories.artist.RepositoryArtistDataSource;
 

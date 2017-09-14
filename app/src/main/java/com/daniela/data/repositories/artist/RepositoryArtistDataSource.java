@@ -1,8 +1,7 @@
 package com.daniela.data.repositories.artist;
 
 
-import com.daniela.data.managers.remote.Artist;
-import com.daniela.data.managers.remote.RestArtist;
+import com.daniela.data.entities.Artist;
 
 import io.reactivex.Single;
 

@@ -1,5 +1,10 @@
 package com.daniela.data.managers.remote;
 
+import com.daniela.app.base.remote.ApiServiceInterface;
+import com.daniela.app.base.remote.BaseService;
+import com.daniela.data.managers.remote.response.artist.ResponseArtistAlbums;
+import com.daniela.data.managers.remote.response.artist.ResponseArtists;
+
 import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;

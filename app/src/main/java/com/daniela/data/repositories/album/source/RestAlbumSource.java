@@ -1,20 +1,15 @@
 package com.daniela.data.repositories.album.source;
 
 
-import com.daniela.data.managers.remote.Artist;
-import com.daniela.data.managers.remote.ResponseArtistAlbums;
-import com.daniela.data.managers.remote.ResponseArtists;
-import com.daniela.data.managers.remote.RestAlbum;
-import com.daniela.data.managers.remote.RestArtist;
-import com.daniela.data.managers.remote.RestClient;
+import com.daniela.data.managers.remote.response.artist.ResponseArtistAlbums;
+import com.daniela.data.managers.remote.response.album.RestAlbum;
+import com.daniela.data.managers.remote.restclient.RestClient;
 import com.daniela.data.managers.remote.RestManagerPrivateService;
-import com.daniela.data.repositories.album.Album;
+import com.daniela.data.entities.Album;
 import com.daniela.data.repositories.album.RepositoryAlbumDataSource;
-import com.daniela.data.repositories.artist.RepositoryArtistDataSource;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Observable;
 
 import io.reactivex.Single;
 import io.reactivex.functions.Function;
