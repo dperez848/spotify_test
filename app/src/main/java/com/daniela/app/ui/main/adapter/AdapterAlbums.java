@@ -72,7 +72,7 @@ public class AdapterAlbums extends BaseAdapter<Album, BaseAdapter.BaseViewHolder
         private void setAlbumImage(Album album) {
             Glide.with(getBinding().artistImage.getContext())
                     .load(album.getImageUrl())
-                    .placeholder(R.drawable.album_preview)
+                    .placeholder(R.drawable.placeholder)
                     .fitCenter()
                     .dontAnimate()
                     .into(getBinding().artistImage);

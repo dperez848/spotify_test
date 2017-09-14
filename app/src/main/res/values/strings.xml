@@ -1,19 +1,25 @@
 <resources>
+
+    <!--General-->
     <string name="app_name">SpotifyTest</string>
+    <string name="value_string" translatable="false">%1$s</string>
+    <string name="value_int" translatable="false">%1$d</string>
+
+    <!--Main-->
     <string name="main_title">Spotify Test</string>
-    <string name="albums_title">Album</string>
     <string name="frg_main_message_finding">Buscando artista</string>
     <string name="frg_external_button_open">Open in Spotify</string>
     <string name="frg_main_button_search">Search</string>
     <string name="frg_main_popularity_title">Popularity</string>
     <string name="frg_main_name_title">Name</string>
     <string name="frg_main_followers_title">Followers</string>
-    <string name="value_string" translatable="false">%1$s</string>
-    <string name="value_int" translatable="false">%1$d</string>
     <string name="frg_main_error_artist">Something went wrong, try again</string>
     <string name="frg_main_error_title">Oops</string>
     <string name="frg_main_loading_view">Ingrese el nombre de su artista favorito</string>
     <string name="frg_main_empty_view">No se ha encontrado ningun artista</string>
     <string name="frg_main_hint_artist">i.e Madonna</string>
     <string name="list_item_countries_available">Available in: %1$s</string>
+    <string name="followers_value">%1$d followers</string>
+    <string name="popularity_value">Popularity: %1$s</string>
+    
 </resources>

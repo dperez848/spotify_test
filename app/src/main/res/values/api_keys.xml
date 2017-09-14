@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="token">Bearer BQCFg0ameS7jCcv0p-6yvvA4hy3xQP596wn-2yIjG_PlvKZLnHgiR2hMqSydFJaHRC7gmUZQ53GuDi7ezHzUuOhZHptXf0ZT3SzeglHKpo9dfmXvCKffLlTnUZhPpW_geT7tOVX2XwoABK3204gKbpGtj8f0gUeLC7H0sWlvKRk
+    <string name="token">Bearer BQBN-RKiy4OnmN4F1ecfqSfKX7wNFmk8w843P3KZGbKQGmsWK6lrtVPsSlv81DgIOAqeE4i1vdZMOCrqOnPYpUnQ6ASzuMlGwwY_Afi3rC26y-J-f4Hm4EkoissF_oBVldBpD7LXJlo6-tK1xVP5ScMwwaifJv9mJ60-I7MF7wDWF2L5oSg
     </string>
     <string name="header_auth">Authorization</string>
 </resources>

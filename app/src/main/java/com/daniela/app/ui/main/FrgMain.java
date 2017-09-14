@@ -73,12 +73,6 @@ public class FrgMain extends BaseFragment implements EventHandlerNavigation, Ada
         setupRecyclerView();
     }
 
-    private void setupRecyclerView() {
-        binding.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        binding.recyclerView.setHasFixedSize(true);
-        binding.recyclerView.setAdapter(adapter);
-    }
-
     @Override
     protected void initListeners() {
         setRefreshListener();
@@ -133,11 +127,26 @@ public class FrgMain extends BaseFragment implements EventHandlerNavigation, Ada
         });
     }
 
+    private void setupRecyclerView() {
+        binding.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        binding.recyclerView.setHasFixedSize(true);
+        binding.recyclerView.setAdapter(adapter);
+    }
+
     @Override
     public void onClickEvent() {
         binding.name.setText("");
         binding.artistCard.setVisibility(View.GONE);
         binding.recyclerView.setVisibility(View.GONE);
+        binding.defaultCommand.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public void onAlbumClick(Album album) {
+        ((ActivityMain) getActivity())
+                .navigateToAlbumDetail(
+                        FrgAlbumDetail.newInstance(album.getExternalUrl(), album.getImageUrl()),
+                        album.getName());
     }
 
     private void getArtist() {
@@ -158,7 +167,6 @@ public class FrgMain extends BaseFragment implements EventHandlerNavigation, Ada
                     }
                 });
     }
-
 
     private void getAlbums(Artist artist) {
         viewModel.getArtistAlbums(artist.getId())
@@ -185,27 +193,21 @@ public class FrgMain extends BaseFragment implements EventHandlerNavigation, Ada
         this.binding.swipeRefresh.setRefreshing(false);
     }
 
-    @Override
-    public void onAlbumClick(Album album) {
-        ((ActivityMain) getActivity())
-                .navigateToAlbumDetail(
-                        FrgAlbumDetail.newInstance(album.getExternalUrl(), album.getImageUrl()),
-                        album.getName());
-    }
 
     private void setArtistInfo(Artist artist) {
         binding.artistName.setText(artist.getName());
-        binding.popularity.setText(String.format(getString(R.string.value_int), artist.getPopularity()));
-        binding.followers.setText(String.format(getString(R.string.value_int), artist.getTotalFollowers()));
+        binding.popularity.setText(String.format(getString(R.string.popularity_value), artist.getPopularity()));
+        binding.followers.setText(String.format(getString(R.string.followers_value), artist.getTotalFollowers()));
         binding.artistCard.setVisibility(View.VISIBLE);
         binding.recyclerView.setVisibility(View.VISIBLE);
+        binding.defaultCommand.setVisibility(View.INVISIBLE);
         setArtistImage(artist.getImageUrl());
     }
 
     public void setArtistImage(String artistImage) {
         Glide.with(getActivity())
                 .load(artistImage)
-                .placeholder(R.drawable.album_preview)
+                .placeholder(R.drawable.placeholder)
                 .fitCenter()
                 .dontAnimate()
                 .into(binding.artistImage);

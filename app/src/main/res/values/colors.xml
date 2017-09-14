@@ -3,7 +3,8 @@
     <!--General-->
     <color name="primary">#181818</color>
     <color name="primary_dark">#100E11</color>
-    <color name="accent">@android:color/white</color>
+    <color name="accent">@android:color/black</color>
     <color name="text_primary">@android:color/white</color>
     <color name="window_background">#181818</color>
+    <color name="gray_placeholder">#EEEEEE</color>
 </resources>

@@ -9,13 +9,5 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/frg_main_loading_view"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="@dimen/default_large_size" />
-
     </LinearLayout>
 </layout>

@@ -9,7 +9,10 @@
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:orientation="horizontal"
-        android:padding="@dimen/default_small_size">
+        android:paddingLeft="@dimen/default_medium_size"
+        android:paddingRight="@dimen/default_medium_size"
+        android:paddingBottom="@dimen/default_small_size"
+        android:paddingTop="@dimen/default_small_size">
 
         <ImageView
             android:id="@+id/artistImage"
@@ -30,8 +33,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/default_medium_size_text"
                 android:textStyle="bold"
+                android:maxLines="3"
+                android:ellipsize="end"
                 tools:text="Item 1" />
 
             <android.support.v7.widget.AppCompatTextView
@@ -40,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/default_medium_size_text"
+                android:textSize="@dimen/default_medium_size_text_options"
                 android:visibility="gone"
                 tools:text="Item 1"
                 tools:visibility="visible" />

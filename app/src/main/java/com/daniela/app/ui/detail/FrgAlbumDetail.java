@@ -76,7 +76,7 @@ public class FrgAlbumDetail extends BaseFragment implements EventHandlerNavigati
     private void setAlbumImage() {
         Glide.with(getActivity())
                 .load(viewModel.getImageUrl())
-                .placeholder(R.drawable.album_preview)
+                .placeholder(R.drawable.placeholder)
                 .fitCenter()
                 .dontAnimate()
                 .into(binding.imageAlbum);
